@@ -446,20 +446,21 @@
   {
     "name": "QuarkChain Testnet",
     "identifier": "sepolia/quarkchain",
-    "chainId": 3151998,
+    "chainId": 9222,
     "rpc": [
-      ""
+      "https://rpc.beta2.testnet.l2.quarkchain.io:8545"
     ],
     "explorers": [
-      ""
+      "https://explorer.beta2.testnet.l2.quarkchain.io"
     ],
-    "superchainLevel": 1,
+    "superchainLevel": 0,
     "governedByOptimism": false,
     "dataAvailabilityType": "eth-da",
     "parent": {
       "type": "L2",
       "chain": "sepolia"
     },
+    "gasPayingToken": "0x057898f3C43F129a17517B9056D23851F124b19f",
     "faultProofs": {
       "status": "permissioned"
     }

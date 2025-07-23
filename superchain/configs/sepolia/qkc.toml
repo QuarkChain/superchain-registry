@@ -1,16 +1,16 @@
-name = "QuarkChain Sepolia Testnet"
-public_rpc = "https://prpc.beta2.testnet.l2.quarkchain.io:8545"
+name = "QuarkChain Testnet"
+public_rpc = "https://rpc.beta2.testnet.l2.quarkchain.io:8545"
 sequencer_rpc = "https://rpc.beta2.testnet.l2.quarkchain.io:8545"
 explorer = "https://explorer.beta2.testnet.l2.quarkchain.io"
-superchain_level = 1
+superchain_level = 0
 governed_by_optimism = false
-superchain_time = 0
 data_availability_type = "eth-da"
-chain_id = 3151998
-batch_inbox_addr = "0x2d93c2A44e7b33AbfAa3f0c3353C7dFE266736D5"
+chain_id = 9222
+batch_inbox_addr = "0x5BA3AEcD1d7e89Cd3C2fd0E95772fAF2b3B5Db03"
 block_time = 2
 seq_window_size = 7200
 max_sequencer_drift = 600
+gas_paying_token = "0x057898f3C43F129a17517B9056D23851F124b19f"
 
 [hardforks]
   canyon_time = 0
@@ -19,13 +19,17 @@ max_sequencer_drift = 600
   fjord_time = 0
   granite_time = 0
   holocene_time = 0
-  pectra_blob_schedule_time = 0
   isthmus_time = 0
 
 [optimism]
   eip1559_elasticity = 10
   eip1559_denominator = 50
   eip1559_denominator_canyon = 250
+  l2_blob_time = 1753264933
+  soul_gas_token_time = 1753264933
+  is_soul_backed_by_native = true
+  l1_base_fee_scalar_multiplier = 100000
+  l1_blob_base_fee_scalar_multiplier = 10000000
 
 [genesis]
   l2_time = 1695768288
@@ -36,7 +40,7 @@ max_sequencer_drift = 600
     hash = "0xf72602b79a59a6d723bafdf9f895309c668b9e95f821e6c560ddbb23cced4bf5"
     number = 0
   [genesis.system_config]
-    batcherAddress = "0xbe247af62eec435530e47229b05a96eac30885ea"
+    batcherAddress = "0x9ec64Add2147Af55aFacE0852054d2E6Ba8ff716"
     overhead = "0x0000000000000000000000000000000000000000000000000000000000000000"
     scalar = "0x010000000000000000000000000000000000000000000000000c5fc500000558"
     gasLimit = 60000000
@@ -47,24 +51,23 @@ max_sequencer_drift = 600
   SystemConfigOwner = "0xafF0CA253b97e54440965855cec0A8a2E2399896"
   ProxyAdminOwner = "0xafF0CA253b97e54440965855cec0A8a2E2399896"
   Guardian = "0xafF0CA253b97e54440965855cec0A8a2E2399896"
-  Challenger = "0x7008896c824e9b623D3044Fc2b811C5f5bcfdD99"
-  Proposer = "0xffaA8d2460847957f5Ce7249b953294653f857B3"
-  UnsafeBlockSigner = "0xC955903D6781895087eFd8bA3ba88c5039fA6b32"
-  BatchSubmitter = "0xBE247AF62EEC435530e47229b05A96Eac30885ea"
+  Challenger = "0xCD14a3fafECFcE9048E353fAb67c289eEef75c7c"
+  Proposer = "0xCb7aEF1bf688Ce0538F3EE4963C762C033016A4A"
+  UnsafeBlockSigner = "0x5FF572494BcC4e5FDB109EfA9e09DEd18C70C7E0"
+  BatchSubmitter = "0x9ec64Add2147Af55aFacE0852054d2E6Ba8ff716"
 
 [addresses]
-  AddressManager = "0xfdb6a55735dbda9b102776a79bf5e9bce95e4dd3"
-  L1CrossDomainMessengerProxy = "0x31d2ff2e65202bb85d73780232cf93384f182339"
-  L1ERC721BridgeProxy = "0x69deca2497df6a1a99130fbe3ef62a953aacfa13"
-  L1StandardBridgeProxy = "0x0be17eda56eb3959d5e34be448869741b24937ab"
-  OptimismMintableERC20FactoryProxy = "0x8cccd445f1efe32d0702c488566612ebcad4337c"
-  OptimismPortalProxy = "0x08be8f281e6be7cf6af3628c5419942bce57ff77"
-  SystemConfigProxy = "0x7db2e75a482e2c5520c7a974328f8959a6efa2bc"
-  ProxyAdmin = "0x5359ffa57acdccb66194dfcf55c840441da3a868"
-  AnchorStateRegistryProxy = "0xfc5b219d709dbb26d778c98f0f5a9147947c6b20"
-  DelayedWETHProxy = "0xf42579a9e1cf346b1058bf727ed0817f79c2192d"
-  DisputeGameFactoryProxy = "0x656d83549dd7fa7ad24a651c25ab144780162f2a"
-  FaultDisputeGame = "0x0000000000000000000000000000000000000000"
+  AddressManager = "0xc3d59c419122b256a5bb8f283e6babbf329f414d"
+  L1CrossDomainMessengerProxy = "0xbd517f20eb106931d2c8b7f8bf8025313eeeb834"
+  L1ERC721BridgeProxy = "0x3283cfc4c469f356627785c0508af0026354d8ae"
+  L1StandardBridgeProxy = "0xaf0a2534d1877a70fa300f0acc701a4dc7b72da1"
+  OptimismMintableERC20FactoryProxy = "0x39258eadbe60135f1ae0a4beb0eb3e049c74c64e"
+  OptimismPortalProxy = "0x1c66969254aac045dfc5774f56f5db71d29e00ce"
+  SystemConfigProxy = "0x64acd28defaaa8dff0d8ad2246cd5a6bcc58ed69"
+  ProxyAdmin = "0x786cb63e4868b8f7f6ef14ef432dc53aeeb3ce44"
+  SuperchainConfig = "0x8507b61cc090b406730705d64e4835f506d9365c"
+  AnchorStateRegistryProxy = "0xb883c64a98230802c8887abe79fb93e981c310ae"
+  DelayedWETHProxy = "0x5c0149ed0b67338fcac37430add46e834ce16d2c"
+  DisputeGameFactoryProxy = "0x5921f908ab28981260a1630f89ed14cee7596a4a"
   MIPS = "0xf027f4a985560fb13324e943edf55ad6f1d15dc1"
-  PermissionedDisputeGame = "0x8ac419c9628d238f4a852b0c686abdc0c4dd7f4d"
   PreimageOracle = "0x1fb8cdfc6831fc866ed9c51af8817da5c287add3"
