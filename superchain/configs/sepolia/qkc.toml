@@ -25,8 +25,8 @@ gas_paying_token = "0x057898f3C43F129a17517B9056D23851F124b19f"
   eip1559_elasticity = 10
   eip1559_denominator = 50
   eip1559_denominator_canyon = 250
-  l2_blob_time = 1753264933
-  soul_gas_token_time = 1753264933
+  l2_blob_time = 1753328092
+  soul_gas_token_time = 1753328092
   is_soul_backed_by_native = true
   l1_base_fee_scalar_multiplier = 100000
   l1_blob_base_fee_scalar_multiplier = 10000000
@@ -34,10 +34,10 @@ gas_paying_token = "0x057898f3C43F129a17517B9056D23851F124b19f"
 [genesis]
   l2_time = 1695768288
   [genesis.l1]
-    hash = "0x1c2325c2cc946f484e4f8e277065c0e3e07301d1686d5f868e66ead7de66b3e3"
-    number = 3824
+    hash = "0x5d44d20c5a9d007e5f634b14f9e7a5ab54f68c5bf68aacb8f643e49702b5afb8"
+    number = 11525
   [genesis.l2]
-    hash = "0x8fbab36e16daafc4872a80dbf5fc029db5b5803c1244eaaac9bdda20a07722a1"
+    hash = "0x0155dc188594fd5b5a1a00348a5e3c184bd88cf6d0a22751780652f10776b14e"
     number = 0
   [genesis.system_config]
     batcherAddress = "0x9ec64Add2147Af55aFacE0852054d2E6Ba8ff716"
