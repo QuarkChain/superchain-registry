@@ -34,10 +34,10 @@ gas_paying_token = "0x057898f3C43F129a17517B9056D23851F124b19f"
 [genesis]
   l2_time = 1695768288
   [genesis.l1]
-    hash = "0x5d44d20c5a9d007e5f634b14f9e7a5ab54f68c5bf68aacb8f643e49702b5afb8"
-    number = 11525
+    hash = "0x546981e33081cb571c0c385eab7faf564148cf56ec3714f81fbdefb2b241bdcd"
+    number = 14237
   [genesis.l2]
-    hash = "0x0155dc188594fd5b5a1a00348a5e3c184bd88cf6d0a22751780652f10776b14e"
+    hash = "0x5df358052e6ea9fb6c52f577c4a2b8137268b23221e71159fad6a2be6991370b"
     number = 0
   [genesis.system_config]
     batcherAddress = "0x1f9a5f4233e6155bc8173ae9e84093e51a9ef49e"
