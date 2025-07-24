@@ -19,6 +19,7 @@ gas_paying_token = "0x057898f3C43F129a17517B9056D23851F124b19f"
   fjord_time = 0
   granite_time = 0
   holocene_time = 0
+  pectra_blob_schedule_time = 0
   isthmus_time = 0
 
 [optimism]
