@@ -918,3 +918,18 @@
     chain = "rehearsal-0-bn"
   [chains.fault_proofs]
     status = "permissionless"
+
+[[chains]]
+  name = "QuarkChain Gamma Testnet"
+  identifier = "sepolia/quarkchain"
+  chain_id = 110011
+  rpc = ["https://rpc.gamma.testnet.l2.quarkchain.io:8545"]
+  explorers = ["https://explorer.gamma.testnet.l2.quarkchain.io"]
+  superchain_level = 0
+  governed_by_optimism = false
+  data_availability_type = "eth-da"
+  [chains.parent]
+    type = "L2"
+    chain = "sepolia"
+  [chains.fault_proofs]
+    status = "permissioned"    

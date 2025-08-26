@@ -971,6 +971,27 @@
     }
   },
   {
+    "name": "QuarkChain Gamma Testnet",
+    "identifier": "sepolia/quarkchain",
+    "chainId": 110011,
+    "rpc": [
+      "https://rpc.gamma.testnet.l2.quarkchain.io:8545"
+    ],
+    "explorers": [
+      "https://explorer.gamma.testnet.l2.quarkchain.io"
+    ],
+    "superchainLevel": 0,
+    "governedByOptimism": false,
+    "dataAvailabilityType": "eth-da",
+    "parent": {
+      "type": "L2",
+      "chain": "sepolia"
+    },
+    "faultProofs": {
+      "status": "permissioned"
+    }
+  },
+  {
     "name": "RACE Testnet",
     "identifier": "sepolia/race",
     "chainId": 6806,

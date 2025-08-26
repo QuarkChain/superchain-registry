@@ -1,0 +1,74 @@
+name = "QuarkChain Gamma Testnet"
+public_rpc = "https://rpc.gamma.testnet.l2.quarkchain.io:8545"
+sequencer_rpc = "https://rpc.gamma.testnet.l2.quarkchain.io:8545"
+explorer = "https://explorer.gamma.testnet.l2.quarkchain.io"
+superchain_level = 0
+governed_by_optimism = false
+data_availability_type = "eth-da"
+chain_id = 110011
+batch_inbox_addr = "0x3fe221a447f350551ff208951098517252018007"
+block_time = 2
+seq_window_size = 7200
+max_sequencer_drift = 600
+gas_paying_token = "0xBf0b6e5C39d4afECB824305397729cd0493792E7"
+
+[hardforks]
+  canyon_time = 0
+  delta_time = 0
+  ecotone_time = 0
+  fjord_time = 0
+  granite_time = 0
+  holocene_time = 0
+  pectra_blob_schedule_time = 0
+  isthmus_time = 0
+
+[optimism]
+  eip1559_elasticity = 10
+  eip1559_denominator = 50
+  eip1559_denominator_canyon = 250
+  soul_gas_token_time = 1756436400
+  is_soul_backed_by_native = true
+  l1_base_fee_scalar_multiplier = 100000
+  l1_blob_base_fee_scalar_multiplier = 10000000  
+
+[genesis]
+  l2_time = 1753432896
+  [genesis.l1]
+    hash = "0xe5a0e36b1871bce0be14e2e7989a211b9ad143d76418f7c27affabffb7413538"
+    number = 8838176
+  [genesis.l2]
+    hash = "0x8749ab5e5f99a5fa06d9490eef2e62caf3b88fdfd973cb949e0e1b4039bfb87b"
+    number = 0
+  [genesis.system_config]
+    batcherAddress = "0x907bfa1af0f6def65b67ce53eada8121c7aef56e"
+    overhead = "0x0000000000000000000000000000000000000000000000000000000000000000"
+    scalar = "0x010000000000000000000000000000000000000000000000000c5fc500000558"
+    gasLimit = 60000000
+    eip1559Params = "0x0000000000000000"
+    operatorFeeParams = "0x0000000000000000000000000000000000000000000000000000000000000000"
+
+[roles]
+  SystemConfigOwner = "0x91eDD257B4184aC152cce1bbEC29FD93979Ae0db"
+  ProxyAdminOwner = "0x91eDD257B4184aC152cce1bbEC29FD93979Ae0db"
+  Guardian = "0x91eDD257B4184aC152cce1bbEC29FD93979Ae0db"
+  Challenger = "0x609251a4446354a0B351de4DB0543a2b4CAD464E"
+  Proposer = "0x34dFb869A870Ff1DC0b1e495BFce871576EBb558"
+  UnsafeBlockSigner = "0xf4fCd1c93C8455933360f644269872719BDF7543"
+  BatchSubmitter = "0x907BFA1AF0f6Def65b67Ce53eAdA8121C7AEf56E"
+
+[addresses]
+  AddressManager = "0x130db35f4900b12ddae71a3c2dc54b852c19c0ad"
+  L1CrossDomainMessengerProxy = "0x2f08bb70a1107d2083d3d104436d1f98c7348c5b"
+  L1ERC721BridgeProxy = "0xdd3eb1b4a9135696043cc879f11586b188336b08"
+  L1StandardBridgeProxy = "0x4291cc0e4efd6556d25ebcd00485f9b3077493b0"
+  OptimismMintableERC20FactoryProxy = "0xe39e060d7bb6e62d34e7b85a8335c37c7fd131c1"
+  OptimismPortalProxy = "0x7ae9540cbe4926fc0aefadae71de974d6c58b50e"
+  SystemConfigProxy = "0x5322e17213cd26d5ddcd4389ed89bca1ec9e791c"
+  ProxyAdmin = "0x4ced0e3a63ed51ca92b69d385e73cbfb8fd5477d"
+  AnchorStateRegistryProxy = "0x2c4bb5e294c883758601f536e1511f096938f038"
+  DelayedWETHProxy = "0x9f809b4f1eb8b555c54f2387e9b1e3b1cc148010"
+  DisputeGameFactoryProxy = "0xf2bece34f9b56207db17d490ea4452911da7fb85"
+  FaultDisputeGame = "0x0000000000000000000000000000000000000000"
+  MIPS = "0xf027f4a985560fb13324e943edf55ad6f1d15dc1"
+  PermissionedDisputeGame = "0x29014b28390e403a0f0885330a97dbeb70c66fbf"
+  PreimageOracle = "0x1fb8cdfc6831fc866ed9c51af8817da5c287add3"
