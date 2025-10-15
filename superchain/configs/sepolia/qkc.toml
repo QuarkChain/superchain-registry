@@ -32,6 +32,9 @@ gas_paying_token = "0xBf0b6e5C39d4afECB824305397729cd0493792E7"
   l1_base_fee_scalar_multiplier = 100000
   l1_blob_base_fee_scalar_multiplier = 10000000  
 
+[inbox_contract_config]
+  use_inbox_contract=true  
+
 [genesis]
   l2_time = 1753432896
   [genesis.l1]
